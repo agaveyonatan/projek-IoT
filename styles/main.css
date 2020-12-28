@@ -1,0 +1,205 @@
+nav li a {
+  font-size: 18px;
+  position: relative;
+  padding: 15px 20px;
+}
+
+nav li a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav li a:hover:after {
+  width: 50%;
+  left: 23%;
+}
+
+nav .navbar-brand {
+  font-size: 25px;
+}
+
+nav #dropdown-menu {
+  color: #fff;
+  font-size: 25px;
+}
+
+nav .navbar-toggler:focus, nav .navbar-toggler:active, nav i:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+nav .navbar-nav {
+  border-radius: 8px;
+}
+
+nav.custom-nav {
+  background: #006964;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  height: 70px;
+}
+
+nav.custom-nav a {
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+nav.custom-nav i {
+  color: #fff;
+}
+
+nav.custom-nav .navbar-brand {
+  font-size: 30px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#home {
+  background-color: #238376;
+  color: #fff;
+}
+
+#home .content-home {
+  margin-top: 100px;
+}
+
+#home #mainButton {
+  background-color: #0a5f54;
+  color: #fff;
+}
+
+#home #mainButton:hover i {
+  -webkit-transform: translatex(2px);
+          transform: translatex(2px);
+}
+
+#home #buttonRegister {
+  border: 2px solid #0a5f54;
+  color: #fff;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+#home #buttonRegister:focus, #home #buttonRegister:active, #home #buttonRegister i:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#home #buttonRegister:hover {
+  background-color: #0a5f54;
+}
+
+#home #buttonRegister:hover i {
+  -webkit-animation: writing 1s infinite;
+          animation: writing 1s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+#home .btn-submit {
+  background-color: #0a5f54;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #3fcfbc;
+}
+
+::selection {
+  color: #fff;
+  background-color: #3fcfbc;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+section h2 b {
+  color: #006952;
+}
+
+footer {
+  background: #006964;
+}
+
+footer a:hover {
+  color: #3fcfbc;
+}
+
+@-webkit-keyframes writing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes writing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav ul {
+    background-color: #006964;
+    -webkit-box-shadow: 0 2px 0 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 0 2px rgba(0, 0, 0, 0.3);
+    margin-top: 8px;
+  }
+  nav ul li a {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #home .content-home img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #home .content-home #mainButton, #home .content-home #buttonRegister, #home .content-home .btn-submit {
+    width: 100%;
+    background-color: #0a5f54;
+  }
+  #home .content-home h1 {
+    margin-top: -10vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */

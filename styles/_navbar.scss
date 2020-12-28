@@ -1,0 +1,68 @@
+// NAVBAR
+nav{
+    li a{
+        font-size: 18px;
+        position: relative;
+        padding: 15px 20px;
+
+        &:after{
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: $textLight;
+            transition: $transitionLinkNavbar;
+            width: 0;
+        }
+    
+        &:hover:after{
+            width: 50%; 
+            left: 23%;
+        }
+    }
+
+    .navbar-brand{
+        font-size: 25px;
+    }
+
+    #dropdown-menu{
+        color: $textLight;
+        font-size: 25px;
+    }
+
+    .navbar-toggler:focus, .navbar-toggler:active, i:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-nav{
+        border-radius:8px;
+    }
+}
+
+// CUSTOM NAVBAR
+nav.custom-nav{
+    background: $navBarColor;
+    box-shadow: $shadowNavbar;
+	-webkit-transition : $transitionNavbar;
+    transition : $transitionNavbar;
+    height: 70px;
+
+    a{
+        font-size: 20px;
+        -webkit-transition :  $transitionLink;
+        transition :  $transitionLink;
+    }
+
+    i{
+        color: $textLight;
+    }
+
+    .navbar-brand{
+        font-size: 30px;
+        -webkit-transition : $transitionLink;
+        transition : $transitionLink;
+    }
+}

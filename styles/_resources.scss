@@ -1,0 +1,32 @@
+// COLORS
+$textLight : #fff;
+$textBlack : #020202;
+$textTeal : #006952;
+
+$contentYellow : #f7a800;
+$contentGreen :  #00cc88;
+$contentRed : #e91c01;
+$contentCyan : #01a0e9;
+
+// $bgGradation : linear-gradient(57deg, #31ad9d, #3fcfbc);
+$bgContent :#2a9e8f;
+$bgContent2 :#238376;
+
+$bgSection1 : #f8f8f8;
+$bgSection2 : #f3f3f3;
+
+$navBarColor :  #006964;
+$selectionAndLinkHover : #3fcfbc;
+$mainButton : #0a5f54;
+
+//TRANSITIONS
+$transitionNavbar : all 0.5s ease-out;
+$transitionLink : all 0.3s ease-out;
+$transitionLinkNavbar : width 0.3s ease 0s, left 0.3s ease 0s;
+
+// BOX SHADOW
+$shadowNavbar : 0 0 5px 0 rgba(0, 0, 0, 0.5);
+$shadowDropdown :  0 2px 0 2px rgba(0, 0, 0, 0.3);
+$shadowCardSpread : 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+$shadowCardBottom : 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+$shadowTable : 0px 1px 5px 2px rgba(0,0,0,0.3);

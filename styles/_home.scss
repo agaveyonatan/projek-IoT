@@ -1,0 +1,45 @@
+// HOME SECTION
+#home{
+    background-color: $bgContent2;
+    color: $textLight;
+
+    .content-home{
+        margin-top: 100px;
+    }
+
+    #mainButton{
+        background-color: $mainButton;
+        color:$textLight;
+
+        &:hover {
+            i{
+                transform: translatex(2px);
+            }
+        }
+    }
+
+    #buttonRegister{
+        border: 2px solid $mainButton;  
+        color:$textLight;
+        transition: 0.3s ease-out;
+
+        &:focus, &:active, i:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        
+        &:hover{
+            background-color: $mainButton;
+
+            i{
+                animation: writing 1s infinite;
+                animation-direction: alternate;
+            }
+        }
+    }
+
+    .btn-submit{
+        background-color: $mainButton;
+        color:$textLight;
+    }
+}
