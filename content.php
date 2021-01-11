@@ -1,14 +1,6 @@
-<?php
-    include "connection.php";
-    session_start();
-    if (empty($_SESSION['email'])) {
-        header("location:login.php?message=expired");
-    }
-
-    $email = $_SESSION['email'];
-    $query = mysqli_query($con, "SELECT * FROM user WHERE email_address = '$email'") or die(mysqli_error($con));
-    $data = mysqli_fetch_array($query);
-?>
+<!-- <?php
+    $jarak = $_GET['jarak'];
+?> -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,6 +9,7 @@
         <meta name="description" content="An application for Internet of Thing Practicum">
         <meta name="keywords" content="internet, thing, internet of thing">
         <meta name="author" content="">
+        <meta http-equiv="refresh" content="0.5">
 
         <title>Internet of Thing</title>
 
@@ -36,8 +29,9 @@
         <link rel="stylesheet" href="./styles/main.css ">
     </head>
     <body>
+        <!-- <h1>Jarak : <?= $jarak ?> cm</h1> -->
         <header>
-            <nav class="navbar navbar-expand-lg fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-content">
                 <div class="container">
                     <a class="navbar-brand" href="view_user.php">
                         <i class="fas fa-robot"></i> IoT
@@ -48,7 +42,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="logout.php ">Logout</a>
+                                <a class="nav-link" href="view_user.php ">Back</a>
                             </li>
                         </ul>
                     </div>
@@ -56,18 +50,18 @@
             </nav>
         </header>
         <main>
-            <section id="home">
+            <section id="showData">
+                <!-- <h1>Jarak : <?= $jarak ?> cm</h1> -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg content-home">
-                            <img src="./assets/GIF/Personal Settings.gif" class="img-fluid mb-md-4 mb-0" alt="Personal Settings">
-                        </div>
-                        <div class="col-lg content-home mb-lg-4">
-                            <h1><b>Welcome</b> <?php echo $data['username'];?>!</h1>
-                            <h2>Enjoy Working!</h2>
-                            <a href="content.php" class="d-lg-inline"><button type="button" class="btn btn-lg my-4" id="seeDataButton">See Data <i class="fas fa-arrow-circle-right"></i></button></a>
+                        <div class="col-12 text-center mt-4 mb-2">
+                            <h3>Data Sensor</h3>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-12 mb-3" id="records"></div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="py-1">
@@ -77,7 +71,6 @@
                 </div>
             </div>
         </footer>
-
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         <!-- JS -->

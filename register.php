@@ -99,7 +99,7 @@
                                 </div>
                                 <span class="passwordConfirmMessage"></span>
 
-                                <button type="submit" class="btn btn-lg btn-submit mb-3"  onclick="return(validateRegisterUser())">Submit</button>
+                                <button type="submit" class="btn btn-lg btn-submit mb-3" id="registerButton" onclick="return(validateRegisterUser())">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
         <footer class="py-1">
             <div class="container">
                 <div class="footer-copyright text-center text-white py-3">
-                    © 2020 Developed With <i class="fas fa-heart"></i> By Lorem, ipsum</a>
+                    © 2021 Developed With <i class="fas fa-heart"></i> By Lorem, ipsum</a>
                 </div>
             </div>
         </footer>

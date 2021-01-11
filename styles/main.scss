@@ -1,6 +1,7 @@
 @import 'resources';
 @import 'navbar';
 @import 'home';
+@import 'view_user';
 
 html{
     scroll-behavior: smooth;
@@ -64,6 +65,13 @@ footer{
     }
 }
 
+@media screen and (max-width: 991px){
+    #seeDataButton, #loginButton, #registerButton{
+        width: 100%;
+        background-color: $mainButton;
+    }
+}
+
 @media screen and (max-width: 767px){
     #home{
         .content-home{
@@ -73,7 +81,7 @@ footer{
                 margin-right: auto;
             }
 
-            #mainButton, #buttonRegister, .btn-submit{
+            #mainButton, #buttonRegister, .btn-submit, #seeDataButton{
                 width: 100%;
                 background-color: $mainButton;
             }

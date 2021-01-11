@@ -90,7 +90,7 @@
                                 </div>
                                 <span class="passwordMessage"></span>
 
-                                <button type="submit" class="btn btn-lg btn-submit mb-3">Submit</button>
+                                <button type="submit" class="btn btn-lg btn-submit mb-3" id="loginButton">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
         <footer class="py-1">
             <div class="container">
                 <div class="footer-copyright text-center text-white py-3">
-                    © 2020 Developed With <i class="fas fa-heart"></i> By Lorem, ipsum</a>
+                    © 2021 Developed With <i class="fas fa-heart"></i> By Lorem, ipsum</a>
                 </div>
             </div>
         </footer>

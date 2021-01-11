@@ -28,7 +28,7 @@
         <header>
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html#home">
+                    <a class="navbar-brand" href="index.php">
                         <i class="fas fa-robot"></i> IoT
                     </a>
                     <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +88,7 @@
         <footer class="py-1">
             <div class="container">
                 <div class="footer-copyright text-center text-white py-3">
-                    © 2020 Developed With <i class="fas fa-heart"></i> By Lorem, ipsum</a>
+                    © 2021 Developed With <i class="fas fa-heart"></i> By Lorem, ipsum</a>
                 </div>
             </div>
         </footer>

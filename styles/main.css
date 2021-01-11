@@ -85,6 +85,12 @@ nav.custom-nav .navbar-brand {
           transform: translatex(2px);
 }
 
+#home #mainButton:focus, #home #mainButton:active, #home #mainButton i:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 #home #buttonRegister {
   border: 2px solid #0a5f54;
   color: #fff;
@@ -112,6 +118,33 @@ nav.custom-nav .navbar-brand {
 #home .btn-submit {
   background-color: #0a5f54;
   color: #fff;
+}
+
+#seeDataButton {
+  background-color: #0a5f54;
+  color: #fff;
+}
+
+#seeDataButton:hover i {
+  -webkit-transform: translatex(2px);
+          transform: translatex(2px);
+}
+
+#seeDataButton:focus, #seeDataButton:active, #seeDataButton i:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+table, tr, th, td {
+  border: 1px solid #e3e3e3;
+  padding: 10px;
+}
+
+.navbar-content {
+  background: #006964;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 html {
@@ -188,13 +221,20 @@ footer a:hover {
   }
 }
 
+@media screen and (max-width: 991px) {
+  #seeDataButton, #loginButton, #registerButton {
+    width: 100%;
+    background-color: #0a5f54;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #home .content-home img {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  #home .content-home #mainButton, #home .content-home #buttonRegister, #home .content-home .btn-submit {
+  #home .content-home #mainButton, #home .content-home #buttonRegister, #home .content-home .btn-submit, #home .content-home #seeDataButton {
     width: 100%;
     background-color: #0a5f54;
   }
